@@ -1,0 +1,310 @@
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero{
+    position:relative;
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+
+    background:
+        linear-gradient(
+            rgba(8,17,31,.45),
+            rgba(8,17,31,.75)
+        ),
+        url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1800&q=80");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    overflow:hidden;
+}
+
+/* Light Mode */
+
+body[data-theme="light"] .hero{
+
+background:
+linear-gradient(
+rgba(255,255,255,.60),
+rgba(255,255,255,.78)
+),
+url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1800&q=80");
+
+background-size:cover;
+background-position:center;
+
+}
+
+/* ===========================
+   CONTENT
+=========================== */
+
+.hero-content{
+
+max-width:700px;
+
+z-index:2;
+
+animation:fadeUp .9s ease;
+
+}
+
+.hero-tag{
+
+display:inline-flex;
+
+align-items:center;
+
+gap:8px;
+
+padding:10px 22px;
+
+border-radius:50px;
+
+background:var(--primary);
+
+color:white;
+
+font-size:.95rem;
+
+font-weight:600;
+
+margin-bottom:25px;
+
+}
+
+/* ===========================
+   TITLE
+=========================== */
+
+.hero h1{
+
+font-size:4.5rem;
+
+font-weight:700;
+
+line-height:1.1;
+
+color:#ffffff;
+
+margin-bottom:20px;
+
+}
+
+/* Light Theme */
+
+body[data-theme="light"] .hero h1{
+
+color:#111827;
+
+}
+
+/* ===========================
+   PARAGRAPH
+=========================== */
+
+.hero p{
+
+font-size:1.2rem;
+
+line-height:1.9;
+
+color:#E2E8F0;
+
+margin-bottom:40px;
+
+max-width:620px;
+
+}
+
+body[data-theme="light"] .hero p{
+
+color:#334155;
+
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.hero-buttons{
+
+display:flex;
+
+align-items:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.primary-btn{
+
+min-width:180px;
+
+}
+
+.secondary-btn{
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:10px;
+
+min-width:190px;
+
+}
+
+/* ===========================
+   BUTTON ANIMATION
+=========================== */
+
+.primary-btn:hover,
+
+.secondary-btn:hover{
+
+transform:translateY(-4px);
+
+}
+
+/* ===========================
+   ANIMATION
+=========================== */
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:none;
+
+}
+
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media(max-width:992px){
+
+.hero h1{
+
+font-size:3.3rem;
+
+}
+
+.hero p{
+
+font-size:1.05rem;
+
+}
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+.hero{
+
+min-height:90vh;
+
+padding-top:90px;
+
+text-align:center;
+
+}
+
+.hero-content{
+
+margin:auto;
+
+}
+
+.hero-tag{
+
+margin:auto auto 20px;
+
+}
+
+.hero h1{
+
+font-size:2.4rem;
+
+}
+
+.hero p{
+
+font-size:1rem;
+
+margin:auto;
+
+margin-bottom:35px;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+width:100%;
+
+}
+
+.primary-btn,
+
+.secondary-btn{
+
+width:100%;
+
+}
+
+}
+
+/* ===========================
+   SMALL MOBILE
+=========================== */
+
+@media(max-width:480px){
+
+.hero{
+
+padding-top:70px;
+
+}
+
+.hero h1{
+
+font-size:2rem;
+
+}
+
+.hero p{
+
+font-size:.95rem;
+
+line-height:1.7;
+
+}
+
+}

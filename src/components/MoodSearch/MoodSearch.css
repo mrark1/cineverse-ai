@@ -1,0 +1,53 @@
+.mood-search{
+display:flex;
+gap:15px;
+width:min(700px,90%);
+margin:20px auto 50px;
+}
+
+.mood-search input{
+flex:1;
+padding:15px;
+border:none;
+border-radius:12px;
+background:var(--card);
+color:var(--text);
+outline:none;
+}
+
+.mood-search button{
+padding:15px 25px;
+background:var(--card);
+color:var(--text);
+border:1px solid var(--border);
+border-radius:12px;
+font-weight:600;
+}
+
+.mood-search button:hover{
+background:#1D4ED8;
+}
+
+@media(max-width:768px){
+
+.mood-search{
+
+flex-direction:column;
+
+width:95%;
+
+}
+
+.mood-search input{
+
+width:100%;
+
+}
+
+.mood-search button{
+
+width:100%;
+
+}
+
+}

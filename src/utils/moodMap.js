@@ -1,0 +1,17 @@
+export const moodMap = {
+  happy: "The Secret Life of Walter Mitty",
+  sad: "The Pursuit of Happyness",
+  romantic: "La La Land",
+  comedy: "The Hangover",
+  action: "John Wick",
+  thriller: "Se7en",
+  horror: "The Conjuring",
+  adventure: "Interstellar",
+  family: "Coco",
+  emotional: "Forrest Gump",
+  motivational: "Rocky",
+  "sci-fi": "Inception",
+  fantasy: "Harry Potter",
+  mystery: "Shutter Island",
+  inspiring: "The Shawshank Redemption",
+};

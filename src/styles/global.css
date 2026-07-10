@@ -1,0 +1,272 @@
+/* ===========================
+   Google Font
+=========================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* ===========================
+   CSS Reset
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Poppins",sans-serif;
+    overflow-x:hidden;
+    transition:.35s;
+}
+
+img{
+    width:100%;
+    display:block;
+    -webkit-user-select:none;
+    user-select:none;
+}
+
+button{
+    border:none;
+    outline:none;
+    cursor:pointer;
+    font-family:inherit;
+}
+
+input{
+    outline:none;
+    font-family:inherit;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}
+
+/* ===========================
+   Theme Variables
+=========================== */
+
+:root{
+
+--primary:#2563EB;
+--secondary:#1D4ED8;
+
+--bg:#08111F;
+--surface:#111827;
+--card:#182233;
+
+--text:#ffffff;
+--text-light:#CBD5E1;
+
+--border:#253247;
+
+--shadow:0 12px 30px rgba(0,0,0,.30);
+
+}
+
+/* ===========================
+   Light Theme
+=========================== */
+
+body[data-theme="light"]{
+
+--bg:#F4F7FC;
+--surface:#ffffff;
+--card:#ffffff;
+
+--text:#111827;
+--text-light:#475569;
+
+--border:#E2E8F0;
+
+--shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+/* ===========================
+   Body
+=========================== */
+
+body{
+
+background:var(--bg);
+
+color:var(--text);
+
+}
+
+/* ===========================
+   Container
+=========================== */
+
+.container{
+
+width:min(1400px,92%);
+
+margin:auto;
+
+}
+
+/* ===========================
+   Section
+=========================== */
+
+section{
+
+padding:70px 0;
+
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.primary-btn{
+
+background:var(--primary);
+
+color:#fff;
+
+padding:14px 28px;
+
+border-radius:10px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.primary-btn:hover{
+
+transform:translateY(-3px);
+
+background:var(--secondary);
+
+}
+
+.secondary-btn{
+
+background:var(--card);
+
+color:var(--text);
+
+padding:14px 28px;
+
+border-radius:10px;
+
+font-weight:600;
+
+transition:.3s;
+
+border:1px solid var(--border);
+
+}
+
+.secondary-btn:hover{
+
+transform:translateY(-3px);
+
+}
+
+/* ===========================
+   Cards
+=========================== */
+
+.card{
+
+background:var(--card);
+
+border-radius:18px;
+
+box-shadow:var(--shadow);
+
+}
+
+/* ===========================
+   Scrollbar
+=========================== */
+
+::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:var(--primary);
+
+border-radius:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:var(--surface);
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:992px){
+
+.container{
+
+width:94%;
+
+}
+
+}
+
+@media(max-width:768px){
+
+html{
+
+font-size:15px;
+
+}
+
+section{
+
+padding:60px 0;
+
+}
+
+}
+
+@media(max-width:480px){
+
+html{
+
+font-size:14px;
+
+}
+
+.container{
+
+width:95%;
+
+}
+
+}
+
+@media(max-width:360px){
+
+html{
+
+font-size:13px;
+
+}
+}

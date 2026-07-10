@@ -1,0 +1,153 @@
+/* ==========================================
+   MOVIE GRID
+========================================== */
+
+.movie-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+    gap:28px;
+    padding:60px 0;
+    align-items:start;
+}
+
+/* ==========================================
+   NO RESULTS
+========================================== */
+
+.no-results{
+    min-height:50vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:50px 20px;
+}
+
+.no-results h2{
+    color:var(--text);
+    font-size:2rem;
+    margin-bottom:12px;
+}
+
+.no-results p{
+    color:var(--text-light);
+    font-size:1rem;
+    max-width:500px;
+    line-height:1.7;
+}
+
+/* ==========================================
+   LARGE DESKTOP
+========================================== */
+
+@media (min-width:1600px){
+
+.movie-grid{
+
+grid-template-columns:repeat(6,1fr);
+
+gap:30px;
+
+}
+
+}
+
+/* ==========================================
+   LAPTOP
+========================================== */
+
+@media(max-width:1200px){
+
+.movie-grid{
+
+grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+
+}
+
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media(max-width:992px){
+
+.movie-grid{
+
+grid-template-columns:repeat(3,1fr);
+
+gap:22px;
+
+padding:45px 0;
+
+}
+
+}
+
+/* ==========================================
+   LARGE MOBILE
+========================================== */
+
+@media(max-width:768px){
+
+.movie-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+padding:35px 0;
+
+}
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:480px){
+
+.movie-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:14px;
+
+padding:25px 0;
+
+}
+
+.no-results h2{
+
+font-size:1.5rem;
+
+}
+
+.no-results p{
+
+font-size:.9rem;
+
+}
+
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media(max-width:360px){
+
+.movie-grid{
+
+grid-template-columns:1fr;
+
+gap:18px;
+
+}
+
+}
