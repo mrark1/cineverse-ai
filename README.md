@@ -8,13 +8,13 @@ Search millions of movies, explore trending content, save favorites, and enjoy a
 
 ## 🌐 Live Demo
 
-🔗 https://your-vercel-link.vercel.app
+🔗 https://cineverse-ai-six.vercel.app/
 
 ---
 
 ## 📂 GitHub Repository
 
-🔗 https://github.com/yourusername/cineverse-ai
+🔗 https://github.com/mrark1/cineverse-ai
 
 ---
 
@@ -52,25 +52,25 @@ Search millions of movies, explore trending content, save favorites, and enjoy a
 
 ## Home
 
-(Add Screenshot)
+![alt text](image.png)
 
 ---
 
 ## Search
 
-(Add Screenshot)
+![alt text](image-1.png)
 
 ---
 
 ## Favorites
 
-(Add Screenshot)
+![alt text](image-2.png)
 
 ---
 
 ## Mobile View
 
-(Add Screenshot)
+![alt text](image-3.png)
 
 ---
 
